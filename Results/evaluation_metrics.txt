@@ -1,0 +1,32 @@
+FINAL MODEL EVALUATION METRICS
+==================================================
+
+📊 GridSearch Best Model:
+Best Params: {'max_depth': 5, 'min_samples_split': 5, 'n_estimators': 100}
+Best CV Score: 0.8384
+Test Accuracy: 0.9016
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.88      0.91        33
+           1       0.87      0.93      0.90        28
+
+    accuracy                           0.90        61
+   macro avg       0.90      0.90      0.90        61
+weighted avg       0.90      0.90      0.90        61
+
+--------------------------------------------------
+
+📊 RandomizedSearch Best Model:
+Best Params: {'n_estimators': np.int64(100), 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': 5}
+Best CV Score: 0.8384
+Test Accuracy: 0.9016
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.88      0.91        33
+           1       0.87      0.93      0.90        28
+
+    accuracy                           0.90        61
+   macro avg       0.90      0.90      0.90        61
+weighted avg       0.90      0.90      0.90        61
