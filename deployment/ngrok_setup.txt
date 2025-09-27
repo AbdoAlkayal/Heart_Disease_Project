@@ -1,0 +1,27 @@
+# Ngrok Setup Instructions for Heart Disease Project
+
+1. Install ngrok
+   - Download from: https://ngrok.com/download
+   
+
+2. Authenticate your account
+   - Sign up at: https://dashboard.ngrok.com
+   - Copy your authtoken from: https://dashboard.ngrok.com/get-started/your-authtoken
+   - Run the following command:
+     ngrok config add-authtoken <YOUR_AUTHTOKEN>
+
+3. Run the Streamlit app locally
+   - Navigate to the project directory:
+     cd Heart_Disease_Project/ui
+   - Run the app:
+     streamlit run app.py
+   - The app will be available at http://localhost:8501
+
+4. Start ngrok tunnel
+   - In a new terminal, run:
+     ngrok http 8501
+
+5. Access the public link
+   - Ngrok will display a forwarding URL like:
+     https://xxxxx.ngrok-free.app -> http://localhost:8501
+   - Share this link to allow public access to your Streamlit app.
